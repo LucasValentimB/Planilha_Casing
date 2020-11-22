@@ -1,2 +1,3 @@
 # Planilha_Casing
-Engenharia reversa da planilha Casing do site Richard Nakka, construção de aplicativo em Python
+Processo de engenharia reversa da plhanilha casing do site Richard Nakka. A proposta é entender como a planilha funciona, entender as variáveis de entrada e saída e as equações usada.
+Atividade de Iniciação científica, modo pesquisando desde o primeiro dia, pela UFABC
