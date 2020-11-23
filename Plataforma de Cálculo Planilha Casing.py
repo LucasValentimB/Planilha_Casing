@@ -26,22 +26,17 @@ print(" ")
 print ("---Pressões de design e ruptura---")
 print (" ")
 Pd=2*(t*Fty*1000)/(Do*Sd)
-print("Pressão de Design: ",'{:.3f}'.format(Pd))
+print("Pressão de Design: ",'{:.3f}'.format(Pd)," kPa")
 Pu=2*B*t*Fty*1000/Do
-print("Pressão de ruptura: ",'{:.3f}'.format(Pu))
+print("Pressão de ruptura: ",'{:.3f}'.format(Pu), " kPa")
 Su=Pu/Pd
 print("Fator de segurança de ruptura: ",'{:.3f}'.format(Su))
 
 print(" ")
 print ("---Deformação elástica sobre pressão---")
 print (" ")
-dD=2*Pd*(Do/2)**2/E/10**2/t*(1-v/2)
-print("Variação do diâmetro do invólucro: ",'{:.5f}'.format(dD))
+dD=2*Pd*(Do/2)**2/E/10**6/t*(1-v/2)
+print("Variação do diâmetro do invólucro: ",'{:.5f}'.format(dD)," m")
 dc=(dD*math.pi)
-print("Variação da circunferência do invólucro: ",'{:.5f}'.format(dc))
+print("Variação da circunferência do invólucro: ",'{:.5f}'.format(dc)," m")
 
-'''
-Formula Excel
-dD=2*Pd*(Do/2)**2/E/10**2/t*(1-v/2)
-print (dD)
-'''
