@@ -28,9 +28,9 @@ print("Fator de ruptura: ",'{:.3f}'.format(B))
 print (" ")
 print(" ")
 print ("---Pressões de design e ruptura---")
-Pd=2*(t*Fty*1000)/(Do*Sd)
+Pd=(2*(t*Fty*1000)/(Do*Sd))*6.8947
 print("Pressão de Design: ",'{:.3f}'.format(Pd)," kPa")
-Pu=2*B*t*Fty*1000/Do
+Pu=(2*B*t*Fty*1000/Do)*6.8947
 print("Pressão de ruptura: ",'{:.3f}'.format(Pu), " kPa")
 Su=Pu/Pd
 print("Fator de segurança de ruptura: ",'{:.3f}'.format(Su))
@@ -38,9 +38,9 @@ print("Fator de segurança de ruptura: ",'{:.3f}'.format(Su))
 print (" ")
 print(" ")
 print ("---Deformação elástica sobre pressão---")
-dD=2*Pd*(Do/2)**2/E/10**6/t*(1-v/2)
+dD=(2*Pd*(Do/2)**2/E/10**6/t*(1-v/2))*0.0254
 print("Variação do diâmetro do invólucro: ",'{:.5f}'.format(dD)," m")
-dc=(dD*math.pi)
+dc=((dD*math.pi))*0.0254
 print("Variação da circunferência do invólucro: ",'{:.5f}'.format(dc)," m")
 
 plt.title('Fator de ruptura para cilindros pressurizados')
@@ -48,4 +48,6 @@ plt.xlabel('Fty/Ftu')
 plt.ylabel('B')
 plt.plot([0.5, 0.6, 0.7, 0.8, 0.9, 1], [2.048, 1.735, 1.527, 1.379, 1.254, 1.153], color='g', marker='o')
 plt.axis([0.5, 1, 1, 2.2]) # [xmin, xmax, ymin, ymax]
+plt.show()
+ax, ymin, ymax]
 plt.show()
