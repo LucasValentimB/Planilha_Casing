@@ -1,0 +1,13 @@
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+casing/Casing.py
+casing/__init__.py
+casing/__main__.py
+casing/materials.py
+casing.egg-info/PKG-INFO
+casing.egg-info/SOURCES.txt
+casing.egg-info/dependency_links.txt
+casing.egg-info/requires.txt
+casing.egg-info/top_level.txt
